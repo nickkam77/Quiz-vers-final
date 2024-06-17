@@ -213,7 +213,7 @@ function mostrarResultado() {
         valorPorcentagem.textContent = `${valorFinalPorcentagem}%`
        
     
-        circuloPorcentagem.style.background = `conic-gradient(#0028aa ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+        circuloPorcentagem.style.background = `conic-gradient(#e4c200 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
 
         
 

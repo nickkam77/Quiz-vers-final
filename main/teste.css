@@ -98,13 +98,18 @@ body{
     color: #000000;
 }
 
-.inicio_cont h1{
-    font-size: 80px;  font-family: "Alfa Slab One", serif; font-weight: 400;
+.inicio_cont h1 {
+    font-size: 80px;  
+    font-family: "Alfa Slab One", serif; 
+    font-weight: 400;
     filter: drop-shadow(0 0 5px #b13f7c); 
     color: aliceblue;
     margin-bottom: 10px;
     animation: pulse 3s infinite;
-}
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
 
 .inicio_cont p{ /*novamente uma maneira mais fácil do que enfiar id e class em tudo :p*/
     font-size: 20px;  font-family: "Alfa Slab One", serif; font-weight: 10;
@@ -189,10 +194,22 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
 
 .info_pop .info{
     display: inline-block; /**/
-    font-size: 16px;
+    font-size: 20px;
     color: #000000;
     font-weight: 500;
     margin: 4px 0;
+    pointer-events: auto;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 1s;
+     transition-delay: 1s;
+
+}
+
+.info_pop .info:hover{
+   font-size: 25px;
+   animation: pulse 2s infinite;
+
 }
 
 .info_pop .botoes{

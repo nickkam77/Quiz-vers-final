@@ -24,7 +24,7 @@ body{
     left: 0; /* left, right, top e bottom definem a posição dos elementos em relção às suas bordas*/
     width: 100%;
     padding: 20px 10%; /*o padding determina a distância entre o conteúdo dos elementos e suas bordas */
-    background-color: #6c00aa;
+    background-color: transparent;
     display: flex; /*flexbox é um layout que permite organizar elementos em uma linha*/
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@ body{
     text-decoration: none; 
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
-    filter: drop-shadow(0 0 3px #d65499); /*coloca sombrinha na fonte*/
+    filter: drop-shadow(0 0 3px #79d654); /*coloca sombrinha na fonte*/
     
 }
 
@@ -62,7 +62,7 @@ body{
     min-height: 100vh; /*vh é uma unidade de medida relativa, abreviação para viewport height*/
     /*background: url() no-repeat; --> para caso eu queira colocar background*/
     background-position: center;
-    background-color: #6c00aa; /*posteriomente talvez eu desative o bgc*/
+    background-color: #00490c; /*posteriomente talvez eu desative o bgc*/
     background-size: cover ;
     pointer-events: auto;
     transition: 1s ease;
@@ -102,7 +102,7 @@ body{
     font-size: 80px;  
     font-family: "Alfa Slab One", serif; 
     font-weight: 400;
-    filter: drop-shadow(0 0 5px #b13f7c); 
+    filter: drop-shadow(0 0 5px #3fb165); 
     color: aliceblue;
     margin-bottom: 10px;
     animation: pulse 3s infinite;
@@ -114,8 +114,8 @@ body{
 .inicio_cont p{ /*novamente uma maneira mais fácil do que enfiar id e class em tudo :p*/
     font-size: 20px;  font-family: "Alfa Slab One", serif; font-weight: 10;
     text-align: center;
-    filter: drop-shadow(0 0 2px #9c2665); 
-    color: #ff90cb;
+    filter: drop-shadow(0 0 2px #195a09); 
+    color: #000000;
     margin-bottom: 30px; /*pra não ficar encostado no button*/
 }
 
@@ -188,7 +188,7 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
 
 .info_pop h2{
     font-size: 50px;
-    color: #0028aa
+    color: #00490c;
 
 }
 
@@ -217,7 +217,7 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #94176d; border-bottom: 1px solid #94176d;
+    border-top: 1px solid #179421; border-bottom: 1px solid #179421;
     margin-top: 10px; margin-bottom: 10px;
     padding: 15px 0 7px;
 }
@@ -293,7 +293,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     position: relative;
     width: 500px;
     background: transparent;
-    border: 2px solid #0028aa; border-radius: 6px;
+    border: 2px solid #00490c;; border-radius: 6px;
     display: flex; flex-direction: column;
     padding: 20px 30px;
     opacity: 0;
@@ -314,7 +314,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .caixa1 h1{
     font-size: 45px;  font-family: "Alfa Slab One", serif;
     text-align: center;
-    background: linear-gradient(45deg, transparent, #547cff, transparent); /*vai determinar um degradê no nosso elemento*/
+    background: linear-gradient(45deg, transparent, #00490c, transparent); /*vai determinar um degradê no nosso elemento*/
     border-radius: 6px;
 }
 
@@ -323,7 +323,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 2px solid #0028aa;
+    border-bottom: 2px solid #00490c;;
     margin-bottom: 30px ;
 }
 
@@ -332,7 +332,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 }
 
 .header-quiz .pontos1{
-    background: #0028aa;
+    background: #00490c;;
     border-radius: 3px;
     padding: 7px;
 }
@@ -346,7 +346,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     width: 100%;
     background: transparent;
     padding: 12px;
-    border: 2px solid #0028aa ; border-radius: 4px;
+    border: 2px solid #00490c; ; border-radius: 4px;
     font-size: 18px;
     margin: 15px 0;
     cursor: pointer;
@@ -357,7 +357,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     box-shadow: none;
     transition: .5s;
     border: none; 
-    color: #2d58e7; filter: drop-shadow(0 0 3px #031618);
+    color: #00490c;; filter: drop-shadow(0 0 3px #031618);
     font-size: 24px;
     animation: pulse 2s infinite;
 
@@ -371,7 +371,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #0028aa;
+    border-top: 2px solid #00490c;;
     padding-top: 20px;
     margin-top: 30px;
 }
@@ -383,8 +383,8 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .quiz-ftt .prox{
     width: 100px;
     height: 45px;
-    background: #0028aa;
-    border: 2px solid #0028aa; border-radius: 6px;
+    background: #00490c;;
+    border: 2px solid #27ff44; border-radius: 6px;
     outline: none;
     font-size: 20px;
     cursor: pointer;
@@ -455,7 +455,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
   left: 50%;
   transform: translate(-50%, -50%) scale(.8);
   width: 500px;
-  border: 2px solid #0028aa;
+  border: 2px solid #e4c200;
   border-radius: 6px;
   background: transparent;
   padding: 20px;
@@ -492,12 +492,12 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     position: relative;
     width: 250px;
     height: 250px;
-    background: conic-gradient(#0028aa 3.6deg, rgba(255, 255, 255, .1)0deg);
+    background: conic-gradient(#e4c200 3.6deg, rgba(255, 255, 255, .1)0deg);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(0 0 3px #0028aa);
+    filter: drop-shadow(0 0 3px #e4c200);
    
 }
 
@@ -525,8 +525,8 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .botoes-b button {
     width: 150px;
     height: 50px;
-    background: #0028aa;
-    border: 2px solid #0028aa;
+    background: #e4c200;
+    border: 2px solid #e4c200;
     outline: none;
     border-radius: 6px;
     font-size: 20px;

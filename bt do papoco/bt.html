@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div id="font1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </div>
+
+    <div id="font2">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">  
+    </div>
+
+
+
+    <title>Quiz Cis</title>
+    <link href="bt.css", rel="stylesheet">
+</head>
+
+<body>
+
+    <!--vou anotar a funcionalidade de cada coisinha para conseguir lembrar posteriormente //
+    // para facilitar meu estudo, main e header e outros elementos terão como class name seu próprio nome
+    // main = o elemento principal da página; a = links externos; nav = barra de navegação, seção de itens de navegação --> 
+
+    <main class="main">
+
+        <header class="header">
+
+            <a href="#" class="logo">Quiz Cis</a> <!--posteriormente mudar para h1-->
+
+           
+
+        </header>
+
+         <!--sections são como grandes divs para grandes partes do site-->
+        <div class="container1">
+            <section class="quiz-sec1">
+                <div class="caixa1">
+                    <h1>Quiz - BBB</h1>
+                    <div class="header-quiz">
+                        <span>Quiz Cis!</span>
+                        <span class="pontos1"></span>
+                    </div>
+
+                    <h2 class="perguntas1">Qual o álbum mais hitado da ex-BBB Flay?</h2>
+
+                    
+                    <div class="opt1">
+                      
+                    </div>
+
+                    <div class="quiz-ftt">
+                        <span class="total1"></span>
+                        <button class="prox">Próxima</button>
+                    </div>
+                </div>
+
+<!--aqui vamos colocar um lindo gráfico de acertos em porcentagem-->
+
+                  <div class="caixa-resultado1">
+                    <h2>Resultado:</h2>
+                    <div class="porcentagem-container"> <!--caixa da pontuação-->
+                        <div class="progresso-circ1"> <!--círculo-->
+                            <span class="porcentagem1">50%</span> <!--valor da porcentagem e da pontuação-->
+                        </div>
+
+                        <span class="texto_pontuacao"></span> <!--textinho que aparece mostrando sua pontuação e indicando valores-->
+                    </div>
+
+                    <div class="botoes-b">
+                        <button class="tenteNovamente">tente novamente</button>
+                        <button class="voltarInit">voltar para inicio</button>
+                    </div>
+
+                  </div>
+
+                    
+                
+            </section>
+
+            <section class="inicio"> 
+
+                <div class="inicio_cont">
+                    <h1>Quiz Cis - BT do Papoco</h1>
+                    <p>Clique para continuar</p>
+                    <button class="init">iniciar</button>
+                </div>
+        
+        
+            </section>
+        </div>
+       
+
+    </main>
+
+    <!--aqui deixamos de utilizar o main e passamos a utilizar as outras partes do html -->
+
+    <div class="info_pop">
+
+        <h2>Outras Categorias</h2>
+
+        <a class="info">1. BBB - edições 20-23.</a><br>
+        <a class="info", href="/bt do papoco/bt.html">2. BT do Papoco.</a><br>
+        <a class="info">3. Laísa Maria. </a><br>
+        <a class="info">4. Divas do POP.</a><br>
+        <a class="info">5. De férias com o Ex.</a><br>
+
+        
+        <div class="botoes">
+        <button class="botao fechar">Fechar Quiz</button>
+        <a href="#" class="botao continuar">Continuar Quiz</a>
+        </div>
+ 
+    </div>
+
+
+   
+
+    
+
+    <script src="bt-perg.js"></script>
+    <script src="bt.js"></script>
+</body>
+
+</html>

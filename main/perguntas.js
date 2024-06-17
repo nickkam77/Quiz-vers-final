@@ -60,26 +60,3 @@ let perguntas1 = [
     },
 ];
 
-let perguntas2 = [
-    {
-
-    }
-]
-
-let perguntas3 = [
-    {
-
-    }
-]
-
-let perguntas4 = [
-    {
-
-    }
-]
-
-let perguntas5 = [
-    {
-        
-    }
-]
