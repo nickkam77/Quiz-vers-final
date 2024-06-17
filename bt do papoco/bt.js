@@ -40,25 +40,14 @@ continuar.onclick = () => {
 
     mostrarPerguntas(0);
     contadorPerguntas(1);
+
     pontuacao1();
+    
 
 
 }
 
-retorno.onclick = () =>{
-    caixa1.classList.add('active');
-    continuar.classList.remove('active');
-    caixaResultado.classList.remove('active');
 
-    
- contPerg = 0; // Contador para o número de cada pergunta
- pergNum = 1;
- pontUsuario = 0;
- mostrarPerguntas(contPerg);
- contadorPerguntas(pergNum);
-    
-    pontuacao1();
-}
 
 voltar.onclick = () =>{
     quizSec1.classList.remove('active');
@@ -90,11 +79,14 @@ prox.onclick = () => {
 
         pergNum++;
         contadorPerguntas(pergNum);
+
+       
     }
     else {
         console.log("Quiz finalizado");
         mostrarResultado();
     }
+    
         
 }
 
@@ -133,13 +125,31 @@ function opcaoSelecionada(resposta) {
     
     console.log(resposta1Correta); console.log(resp1Usuario);
 
+
+    
     if (resposta1Correta == resp1Usuario) {
         console.log("Você acertou!");
         resposta.classList.add('correta');
         pontUsuario+= 10;
         pontuacao1();
         
+        let todasResp1 = optLista1.children.length;
+        for (let i=0; i < todasResp1; i++) {
+            if (optLista1.children[i].textContent == resposta1Correta){
+              optLista1.children[i].setAttribute('class', 'respostas1 correta');
+            }
+
+
+
+        }
+
+        for (let i=0; i < todasResp1; i++) {
+            optLista1.children[i].classList.add('desativado');
+           }
+        
     }
+
+
     else {
         console.log("Você errou!");
         resposta.classList.add('errada');
@@ -151,6 +161,8 @@ function opcaoSelecionada(resposta) {
             if (optLista1.children[i].textContent == resposta1Correta){
               optLista1.children[i].setAttribute('class', 'respostas1 correta');
             }
+
+
 
         }
 
@@ -188,6 +200,7 @@ function pontuacao1() { //aqui incluiremos a pontuação do usuario
     pontText1.textContent = `Pontuação: ${pontUsuario} / ${(perguntas1.length)*10}`;
 }
 
+
 function mostrarResultado() {
     caixa1.classList.remove('active');
     caixaResultado.classList.add('active');
@@ -205,6 +218,11 @@ function mostrarResultado() {
 
     let speed = 20; //não entendi direito o que é esse speed, provavelmente o valor de uma animação
 
+
+
+
+
+    
     let porcentagem = setInterval(() => {
         
         valorInicialPorcentagem++;
@@ -214,6 +232,28 @@ function mostrarResultado() {
        
     
         circuloPorcentagem.style.background = `conic-gradient(#0028aa ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+
+        retorno.onclick = () => {
+            caixa1.classList.add('active');
+            continuar.classList.remove('active');
+            caixaResultado.classList.remove('active');
+        
+            
+         contPerg = 0; // Contador para o número de cada pergunta
+         pergNum = 1;
+         pontUsuario = 0;
+         mostrarPerguntas(contPerg);
+         contadorPerguntas(pergNum);
+            
+         pontuacao1();
+            const circuloPorcentagem = document.querySelector('.progresso-circ1');
+            const valorPorcentagem = document.querySelector('.porcentagem1');
+            valorInicialPorcentagem = 0;
+            valorFinalPorcentagem = 0;
+            valorPorcentagem.textContent = `0%`;
+            circuloPorcentagem.style.background = `conic-gradient(#0028aa ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+        }
+        
 
         
 

@@ -58,5 +58,80 @@ let perguntas1 = [
             "D. O bolo de cenoura",
         ]
     },
+
+
+    {
+    num: 6,
+    pergunta: "Qual é o nome completo da participante conhecida como Juliette?",
+    resposta: "D. Juliette Freire",
+    opt: [
+    "A. Juliette Oliveira",
+    "B. Juliette Mendes",
+    "C. Juliette Santos",
+    "D. Juliette Freire",
+    ]
+    },
+
+    {
+        num: 7,
+        pergunta: "Qual é o nome do irmão da participante Viih Tube que também já participou de reality shows?",
+        resposta: "D. Fefo",
+        opt: [
+        "A. Bob",
+        "B. Guto",
+        "C. Zé",
+        "D. Fefo",
+        ]
+        },
+
+        {
+            num: 8,
+            pergunta: "Qual é o nome do seu alter ego imaginário, segundo Manu Gavassi?",
+            resposta: "D. Pamela",
+            opt: [
+            "A. Vanessa",
+            "B. Jessica",
+            "C. Fernanda",
+            "D. Pamela",
+            ]
+            },
+
+            {
+                num: 9,
+                pergunta: "Qual destas personalidades excêntricas NUNCA foi participante do BBB?",
+                resposta: "C. Inês Brasil",
+                opt: [
+                "A. Narcisa Tamborindeguy",
+                "B. Gretchen",
+                "C. Inês Brasil",
+                "D. Valesca Popozuda",
+                ]
+                },
+
+                {
+                    num: 10,
+                    pergunta: "Quantos irmãos participaram juntos em uma mesma edição do BBB, e em que ano isso aconteceu?",
+                    resposta: "D. Dois irmãos, na edição de 2017",
+                    opt: [
+                    "A. Três irmãos, na edição de 2009",
+                    "B. Dois irmãos, na edição de 2014",
+                    "C. Quatro irmãos, na edição de 2019",
+                    "D. Dois irmãos, na edição de 2017",
+                    ]
+                    },
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+        
 ];
 

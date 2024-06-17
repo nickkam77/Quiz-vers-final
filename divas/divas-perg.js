@@ -1,53 +1,56 @@
 let perguntas1 = [
     {
         num: 1,
-        pergunta: "Quem Gabi Prado ameaçou matar de uma pea?",
-        resposta: "C. Carolaine",
+        pergunta: "Qual foi a performance mais icônica da Lady Gaga?",
+        resposta: "A. VMA Poker Face/Paparazzi",
         opt: [
-            "A. Gabi Brandt",
-            "B. Michle",
-            "C. Carolaine",
-            "D. Iury",
+            "A. VMA Poker Face/Paparazzi",
+            "B. Born This Way Grammy",
+            "C. Bad Romance (Gaga Live Sydney Monster Hall)",
+            "D. Shallow (Oscar)"
         ]
     },
+    
     
     
 
     {
         num: 2,
-        pergunta: "Quem levou uma jarra de água na cara na sua 3º noite na casa?",
-        resposta: "A. Carolaine",
+        pergunta: "Complete a frase:\nMadonna: Boa artista,\nBeyonce: Boa performance,\nRihanna: Boa em tudo,\nLady Gaga: Boa cantora, \nKaty:",
+        resposta: "D. Perry",
         opt: [
-            "A. Carolaine",
-            "B. Gabi Prado",
-            "C. Alex",
-            "D. Andre"
+            "A. Bonita",
+            "B. Boa influenciadora",
+            "C. Bons clipes",
+            "D. Perry"
         ]
     },
+    
     
     
 
     {
         num: 3,
-        pergunta: "Qual seleção Laiza foi?",
-        resposta: "C. Para a de Minas Gerais",
+        pergunta: "Qual foi a causa da morte da diva Amy Winehouse?",
+        resposta: "C. Overdose",
         opt: [
-            "A. Para a do Rio de Janeiro",
-            "B. Para a do Ceará",
-            "C. Para a de Minas Gerais",
-            "D. Para a de São Paulo",
+            "A. Suicídio",
+            "B. Assassinato",
+            "C. Overdose",
+            "D. Causas naturais"
         ]
     },
     
+    
     {
         num: 4,
-        pergunta: "Com quem da nossa sala Laiza Monteiro NÃO estudou?",
-        resposta: "D. Galego",
+        pergunta: "Em qual cidade Katy fez um show após o término do noivado?",
+        resposta: "B. São Paulo",
         opt: [
-            "A. Matheus",
-            "B. Paulo Ruan",
-            "C. Glenda",
-            "D. Galego",
+            "A. Atlanta",
+            "B. São Paulo",
+            "C. Miami",
+            "D. Rio de Janeiro"
         ]
     },
     
@@ -55,15 +58,83 @@ let perguntas1 = [
 
     {
         num: 5,
-        pergunta: "Com quem Laiza tem treta?",
-        resposta: "D. Todas as alternativas estão certas",
+        pergunta: "Qual o debut da diva Lady Gaga?",
+        resposta: "C. Poker Face",
         opt: [
-            "A. Cecília x Laiza",
-            "B. Ana Clara x Laiza",
-            "C. Raissa x Laiza",
-            "D. Todas as alternativas estão certas",
+            "A. Senta com Força feat.Anitta",
+            "B. Imperfeita",
+            "C. Poker Face",
+            "D. Judas",
         ]
     },
+
+    {
+        num: 6,
+        pergunta: "Anitta é artista?",
+        resposta: "C. Pare de inventar pessoas!",
+        opt: [
+            "A. Sim",
+            "B. Claro",
+            "C. Pare de inventar pessoas!",
+            "D. Quem é?",
+        ]
+    },
+
+    {
+        num: 7,
+        pergunta: "Qual é o nome da tia da Taylor Swift?",
+        resposta: "C. Marjorie Finlay",
+        opt: [
+            "A. Karen Swift",
+            "B. Andrea Swift",
+            "C. Marjorie Finlay",
+            "D. Abigail Anderson"
+        ]
+    },
+    
+
+    {
+        num: 8,
+        pergunta: "Qual desses não é um apelido para Taylor Swift?",
+        resposta: "B. Camelo albino🐫",
+        opt: [
+            "A. Corcunda de Notre Dame",
+            "B. Camelo albino🐫",
+            "C. Loirinha",
+            "D. Catarrenta"
+        ]
+    },
+
+    {
+        num: 9,
+        pergunta: "Qual dessas artistas é a mais flopada?",
+        resposta: "A. Bebe Rexha",
+        opt: [
+            "A. Bebe Rexha",
+            "B. Kesha",
+            "C. Demi Lovato",
+            "D. Jennifer Lopez"
+        ]
+    },
+    
+
+    {
+        num: 10,
+        pergunta: "De qual álbum é a música 'The Greatest'?",
+        resposta: "B. Norman Fucking Rockwell!",
+        opt: [
+            "A. Lust for Life",
+            "B. Norman Fucking Rockwell!",
+            "C. Honeymoon",
+            "D. Ultraviolence"
+        ]
+    },
+    
+    
+    
+
+
+
     
     
 ];

@@ -24,7 +24,7 @@ body{
     left: 0; /* left, right, top e bottom definem a posição dos elementos em relção às suas bordas*/
     width: 100%;
     padding: 20px 10%; /*o padding determina a distância entre o conteúdo dos elementos e suas bordas */
-    background-color: #ff20b8;
+    background-color: transparent;
     display: flex; /*flexbox é um layout que permite organizar elementos em uma linha*/
     justify-content: space-between;
     align-items: center;
@@ -38,6 +38,7 @@ body{
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     filter: drop-shadow(0 0 3px #d65499); /*coloca sombrinha na fonte*/
+    animation: neon 6s infinite;
     
 }
 
@@ -54,7 +55,8 @@ body{
 
 .barra_nav a:hover,
 .barra_nav a.ativa{
-    color: crimson;
+    color: rgb(255, 25, 205);
+    filter: drop-shadow(0 0 1.8px #7c04b4);
     transition: 0.3s
 }
 
@@ -62,7 +64,9 @@ body{
     min-height: 100vh; /*vh é uma unidade de medida relativa, abreviação para viewport height*/
     /*background: url() no-repeat; --> para caso eu queira colocar background*/
     background-position: center;
-    background-color: #ff20b8; /*posteriomente talvez eu desative o bgc*/
+    background-color: #333333; /*posteriomente talvez eu desative o bgc*/
+    /*background: url(https://c4.wallpaperflare.com/wallpaper/1015/936/992/new-retro-wave-neon-synthwave-retro-style-wallpaper-preview.jpg) no-repeat;*/
+    background: url(https://cdn.pixabay.com/photo/2023/07/11/08/04/synthwave-8119826_1280.jpg) no-repeat;
     background-size: cover ;
     pointer-events: auto;
     transition: 1s ease;
@@ -80,42 +84,43 @@ body{
     width: 200%;
 }
 
-.inicio{
+.inicio {
     position: relative;
-    left: -50%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.inicio_cont{
+.inicio_cont {
     max-width: 600px;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /*ajeita a direção para não colocar tudo um do lado do outro, e sim retinho, em pé*/
     color: #000000;
 }
 
 .inicio_cont h1 {
-    font-size: 80px;  
+    font-size: 100px;  
     font-family: "Alfa Slab One", serif; 
     font-weight: 400;
-    filter: drop-shadow(0 0 5px #b13f7c); 
+    filter: drop-shadow(0 0 5px #ff3ba3); 
     color: aliceblue;
     margin-bottom: 10px;
     animation: pulse 3s infinite;
     display: inline-flex;
     flex-wrap: nowrap;
     white-space: nowrap;
+    margin-top: 60px;
   }
 
 .inicio_cont p{ /*novamente uma maneira mais fácil do que enfiar id e class em tudo :p*/
     font-size: 20px;  font-family: "Alfa Slab One", serif; font-weight: 10;
     text-align: center;
-    filter: drop-shadow(0 0 2px #9c2665); 
-    color: #ff90cb;
+    filter: drop-shadow(0 0 2px #f72996); 
+    color: #ffdcee;
     margin-bottom: 30px; /*pra não ficar encostado no button*/
 }
 
@@ -159,6 +164,33 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
         transform: scale(1);
     }
 }
+
+@keyframes neon {
+    100% {
+      /* maior borrão */
+      text-shadow:  
+        0 0 11px #fff, 
+        0 0 19px #fff, 
+        0 0 4px #f09, 
+        0 0 8px #f09, 
+        0 0 9px #f09, 
+        0 0 10px #f09, 
+        0 0 15px #f09;
+    }
+    0% {
+      /* menor borrão */
+      text-shadow: 
+        
+    
+        0 0 1px #f09, 
+        0 0 4px #f09, 
+        0 0 5px  #f09, 
+        0 0 7px  #f09, 
+        0 0 80px  #f09;
+    }
+
+    
+  }
 
 .inicio_cont .init:not(hover){ /*o not inverte o efeito do hover, basicamente um hover reverso, lindinho demais*/
     transition: 0.7s;
@@ -400,7 +432,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     animation: pulse 2s infinite;
 }
 
-.opt1 .respostas1.correta{
+.opt1 .respostas1.corretaC{
     width: 100%;
     background: transparent;
     padding: 12px;
@@ -419,6 +451,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     color: #14bd30; filter: drop-shadow(0 0 3px #36e626);
     font-size: 24px;
     animation: pulse 2s infinite;
+    pointer-events: none;
 
 }
 

@@ -60,7 +60,7 @@ body{
 
 .main{
     min-height: 100vh; /*vh é uma unidade de medida relativa, abreviação para viewport height*/
-    /*background: url() no-repeat; --> para caso eu queira colocar background*/
+    background: url(https://istoe.com.br/wp-content/uploads/2020/05/dfex2.jpg) no-repeat; /*--> para caso eu queira colocar background*/
     background-position: center;
     background-color: #00490c; /*posteriomente talvez eu desative o bgc*/
     background-size: cover ;
@@ -102,8 +102,8 @@ body{
     font-size: 80px;  
     font-family: "Alfa Slab One", serif; 
     font-weight: 400;
-    filter: drop-shadow(0 0 5px #3fb165); 
-    color: aliceblue;
+    filter: drop-shadow(0 0 5px #0b792f); 
+    color: rgb(208, 255, 121);
     margin-bottom: 10px;
     animation: pulse 3s infinite;
     display: inline-flex;
@@ -114,19 +114,19 @@ body{
 .inicio_cont p{ /*novamente uma maneira mais fácil do que enfiar id e class em tudo :p*/
     font-size: 20px;  font-family: "Alfa Slab One", serif; font-weight: 10;
     text-align: center;
-    filter: drop-shadow(0 0 2px #195a09); 
-    color: #000000;
+    filter: drop-shadow(0 0 4px #104d01); 
+    color: #80ff37;
     margin-bottom: 30px; /*pra não ficar encostado no button*/
 }
 
 .inicio_cont .init{
     width: 200px;
     height: 60px;
-    background: aliceblue;
-    border: 2px solid #fff; 
+    background: rgb(157, 255, 77);
+    border: 2px solid #46f15c; 
     outline: none;
     border-radius: 6px;
-    box-shadow: 0 0 10px aliceblue;
+    box-shadow: 0 0 10px rgb(78, 243, 106);
     margin-top: 10px;
     font-size: 20px; 
     color: #000000;
@@ -139,7 +139,7 @@ body{
     box-shadow: none;
     transition: .5s;
     border: none; 
-    color: aliceblue;
+    color: rgb(11, 48, 0);
     font-size:x-large; font-size: 40px;
     animation: pulse 2s infinite;
 }
@@ -228,8 +228,8 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
     align-items: center;
     width: 130px;
     height: 50px;
-    background: #ff20b8; color: aliceblue;
-    border: 2px solid #ff20b8;
+    background: #20ff58; color: aliceblue;
+    border: 2px solid #20ff20;
     outline: none;
     border-radius: 6px;
     text-decoration: none;
@@ -243,7 +243,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 
 .info_pop .botoes .botao:nth-child(1){
     background-color: aliceblue;
-    color: #ff20b8;
+    color: #1dc017;
 }
 
 .info_pop .botoes .botao:nth-child(1):hover{
@@ -277,7 +277,12 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     left: -50%;
     /*left: 0;*/
     width: 100%;
-    background: #000000;
+    /*background: #000000;*/
+    min-height: 100vh;
+    background-color: #000000;
+    background-size: cover; background: url(https://media.hugogloss.uol.com.br/uploads/2022/02/participantes-do-de-ferias-com-o-ex-caribe.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -292,11 +297,12 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .quiz-sec1 .caixa1 {
     position: relative;
     width: 500px;
-    background: transparent;
+    background: aliceblue;
     border: 2px solid #00490c;; border-radius: 6px;
     display: flex; flex-direction: column;
     padding: 20px 30px;
     opacity: 0;
+    color: #00490c;
     
     pointer-events: none;
     transform: scale(.8);
@@ -316,6 +322,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     text-align: center;
     background: linear-gradient(45deg, transparent, #00490c, transparent); /*vai determinar um degradê no nosso elemento*/
     border-radius: 6px;
+    color: aliceblue;
 }
 
 .caixa1 .header-quiz{
@@ -335,6 +342,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     background: #00490c;;
     border-radius: 3px;
     padding: 7px;
+    color: aliceblue;
 }
 
 .caixa1 .perguntas1{
@@ -383,7 +391,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .quiz-ftt .prox{
     width: 100px;
     height: 45px;
-    background: #00490c;;
+    background: #12cc31;;
     border: 2px solid #27ff44; border-radius: 6px;
     outline: none;
     font-size: 20px;
@@ -420,6 +428,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     color: #14bd30; filter: drop-shadow(0 0 3px #36e626);
     font-size: 24px;
     animation: pulse 2s infinite;
+    pointer-events: none;
 
 }
 
@@ -455,9 +464,9 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
   left: 50%;
   transform: translate(-50%, -50%) scale(.8);
   width: 500px;
-  border: 2px solid #e4c200;
+  border: 2px solid #26e400;
   border-radius: 6px;
-  background: transparent;
+  background: aliceblue;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -466,6 +475,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
   pointer-events: none;
   opacity: 0;
   transition: 1s ease; transition-delay: 1s;
+  color:rgb(38, 165, 0);
   
 }
 
@@ -492,12 +502,12 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     position: relative;
     width: 250px;
     height: 250px;
-    background: conic-gradient(#e4c200 3.6deg, rgba(255, 255, 255, .1)0deg);
+    background: conic-gradient(#0ff52e 3.6deg, rgba(255, 255, 255, .1)0deg);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(0 0 3px #e4c200);
+    filter: drop-shadow(0 0 3px #1be400);
    
 }
 
@@ -506,7 +516,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     position: absolute;
     width: 210px;
     height: 210px;
-    background-color: #000000;
+    background-color: aliceblue;
     border-radius: 50%;
 }
 
@@ -525,8 +535,8 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .botoes-b button {
     width: 150px;
     height: 50px;
-    background: #e4c200;
-    border: 2px solid #e4c200;
+    background: #48e400;
+    border: 2px solid #26e400;
     outline: none;
     border-radius: 6px;
     font-size: 20px;

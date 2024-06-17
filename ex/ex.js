@@ -45,20 +45,7 @@ continuar.onclick = () => {
 
 }
 
-retorno.onclick = () =>{
-    caixa1.classList.add('active');
-    continuar.classList.remove('active');
-    caixaResultado.classList.remove('active');
 
-    
- contPerg = 0; // Contador para o número de cada pergunta
- pergNum = 1;
- pontUsuario = 0;
- mostrarPerguntas(contPerg);
- contadorPerguntas(pergNum);
-    
-    pontuacao1();
-}
 
 voltar.onclick = () =>{
     quizSec1.classList.remove('active');
@@ -138,6 +125,20 @@ function opcaoSelecionada(resposta) {
         resposta.classList.add('correta');
         pontUsuario+= 10;
         pontuacao1();
+
+        let todasResp1 = optLista1.children.length;
+        for (let i=0; i < todasResp1; i++) {
+            if (optLista1.children[i].textContent == resposta1Correta){
+              optLista1.children[i].setAttribute('class', 'respostas1 correta');
+            }
+
+
+
+        }
+
+        for (let i=0; i < todasResp1; i++) {
+            optLista1.children[i].classList.add('desativado');
+           }
         
     }
     else {
@@ -213,7 +214,32 @@ function mostrarResultado() {
         valorPorcentagem.textContent = `${valorFinalPorcentagem}%`
        
     
-        circuloPorcentagem.style.background = `conic-gradient(#e4c200 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+        circuloPorcentagem.style.background = `conic-gradient(#48e400 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+
+        retorno.onclick = () => {
+            caixa1.classList.add('active');
+            continuar.classList.remove('active');
+            caixaResultado.classList.remove('active');
+        
+            
+         contPerg = 0; // Contador para o número de cada pergunta
+         pergNum = 1;
+         pontUsuario = 0;
+         mostrarPerguntas(contPerg);
+         contadorPerguntas(pergNum);
+            
+         pontuacao1();
+            const circuloPorcentagem = document.querySelector('.progresso-circ1');
+            const valorPorcentagem = document.querySelector('.porcentagem1');
+            valorInicialPorcentagem = 0;
+            valorFinalPorcentagem = 0;
+            valorPorcentagem.textContent = `0%`;
+            circuloPorcentagem.style.background = `conic-gradient(#48e400 0deg, rgba(255, 255, 255, .1) 0deg)`;
+        }
+        
+
+        
+
 
         
 

@@ -138,6 +138,20 @@ function opcaoSelecionada(resposta) {
         resposta.classList.add('correta');
         pontUsuario+= 10;
         pontuacao1();
+
+        let todasResp1 = optLista1.children.length;
+        for (let i=0; i < todasResp1; i++) {
+            if (optLista1.children[i].textContent == resposta1Correta){
+              optLista1.children[i].setAttribute('class', 'respostas1 correta');
+            }
+
+
+
+        }
+
+        for (let i=0; i < todasResp1; i++) {
+            optLista1.children[i].classList.add('desativado');
+           }
         
     }
     else {
@@ -160,7 +174,6 @@ function opcaoSelecionada(resposta) {
 
          
     }
-
         
     
 
@@ -213,7 +226,7 @@ function mostrarResultado() {
         valorPorcentagem.textContent = `${valorFinalPorcentagem}%`
        
     
-        circuloPorcentagem.style.background = `conic-gradient(#e4c200 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+        circuloPorcentagem.style.background = `conic-gradient(#ff20b8 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
 
         
 

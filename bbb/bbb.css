@@ -38,6 +38,7 @@ body{
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     filter: drop-shadow(0 0 3px #d65499); /*coloca sombrinha na fonte*/
+  
     
 }
 
@@ -54,15 +55,18 @@ body{
 
 .barra_nav a:hover,
 .barra_nav a.ativa{
-    color: crimson;
+    color: rgb(255, 25, 205);
+    filter: drop-shadow(0 0 1.8px #7c04b4);
     transition: 0.3s
 }
 
 .main{
     min-height: 100vh; /*vh é uma unidade de medida relativa, abreviação para viewport height*/
-    background: url(https://varzeaalegreagora.com/portal/wp-content/uploads/2022/08/LAIZA-VA-800x445.jpg) no-repeat; /*--> para caso eu queira colocar background*/
+    /*background: url() no-repeat; --> para caso eu queira colocar background*/
     background-position: center;
-    background-color: #e4c200; /*posteriomente talvez eu desative o bgc*/
+    background-color: #ff20b8; /*posteriomente talvez eu desative o bgc*/
+    /*background: url(https://c4.wallpaperflare.com/wallpaper/1015/936/992/new-retro-wave-neon-synthwave-retro-style-wallpaper-preview.jpg) no-repeat;*/
+    background: url(https://www.tribunapr.com.br/wp-content/uploads/2024/01/04185722/big-brother-brasil.jpg) no-repeat;
     background-size: cover ;
     pointer-events: auto;
     transition: 1s ease;
@@ -99,23 +103,24 @@ body{
 }
 
 .inicio_cont h1 {
-    font-size: 80px;  
+    font-size: 100px;  
     font-family: "Alfa Slab One", serif; 
     font-weight: 400;
-    filter: drop-shadow(0 0 5px #b13f7c); 
+    filter: drop-shadow(0 0 5px #ff3ba3); 
     color: aliceblue;
     margin-bottom: 10px;
     animation: pulse 3s infinite;
     display: inline-flex;
     flex-wrap: nowrap;
     white-space: nowrap;
+    margin-top: 60px;
   }
 
 .inicio_cont p{ /*novamente uma maneira mais fácil do que enfiar id e class em tudo :p*/
     font-size: 20px;  font-family: "Alfa Slab One", serif; font-weight: 10;
     text-align: center;
-    filter: drop-shadow(0 0 2px #5a4709); 
-    color: #000000;
+    filter: drop-shadow(0 0 2px #f72996); 
+    color: #ffdcee;
     margin-bottom: 30px; /*pra não ficar encostado no button*/
 }
 
@@ -160,6 +165,31 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
     }
 }
 
+@keyframes neon {
+    100% {
+      /* maior borrão */
+      text-shadow:  
+        0 0 11px #fff, 
+        0 0 19px #fff, 
+        0 0 4px #f09, 
+        0 0 8px #f09, 
+        0 0 9px #f09, 
+        0 0 10px #f09, 
+        0 0 15px #f09;
+    }
+    0% {
+      /* menor borrão */
+      text-shadow: 
+        
+    
+        0 0 1px #f09, 
+        0 0 4px #f09, 
+        0 0 5px  #f09, 
+        0 0 7px  #f09, 
+        0 0 80px  #f09;
+    }
+  }
+
 .inicio_cont .init:not(hover){ /*o not inverte o efeito do hover, basicamente um hover reverso, lindinho demais*/
     transition: 0.7s;
 }
@@ -188,7 +218,7 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
 
 .info_pop h2{
     font-size: 50px;
-    color: #ffe927
+    color: #ff20b8
 
 }
 
@@ -202,7 +232,7 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
     cursor: pointer;
     text-decoration: none;
     transition: 1s;
-    transition-delay: 1s ease;
+     transition-delay: 1s;
 
 }
 
@@ -211,7 +241,6 @@ nomeamos de pulse e definimos que pulse será a animação de pulsar daquele  */
    animation: pulse 2s infinite;
 
 }
-
 
 .info_pop .botoes{
     display: flex;
@@ -277,7 +306,12 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     left: -50%;
     /*left: 0;*/
     width: 100%;
-    background: #000000;
+    /*background: #000000;*/
+    min-height: 100vh;
+    background-color: #000000;
+    background-size: cover; background: url(https://www.designi.com.br/images/preview/10884475.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -292,8 +326,8 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .quiz-sec1 .caixa1 {
     position: relative;
     width: 500px;
-    background: transparent;
-    border: 2px solid #ffe927; border-radius: 6px;
+    background: aliceblue;
+    border: 2px solid #ff20b8; border-radius: 6px;
     display: flex; flex-direction: column;
     padding: 20px 30px;
     opacity: 0;
@@ -301,6 +335,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     pointer-events: none;
     transform: scale(.8);
     transition: .5s ease; transition-delay: 0s;
+    color: #7a0252; filter: drop-shadow(0 0 3px #ad0196);
 
 }
 
@@ -314,8 +349,9 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .caixa1 h1{
     font-size: 45px;  font-family: "Alfa Slab One", serif;
     text-align: center;
-    background: linear-gradient(45deg, transparent, #fff454, transparent); /*vai determinar um degradê no nosso elemento*/
+    background: linear-gradient(45deg, transparent, #ff20b8, transparent); /*vai determinar um degradê no nosso elemento*/
     border-radius: 6px;
+    color: aliceblue; filter: drop-shadow(0 0 3px #630232);
 }
 
 .caixa1 .header-quiz{
@@ -323,7 +359,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 2px solid #ffe927;
+    border-bottom: 2px solid #ff20b8;
     margin-bottom: 30px ;
 }
 
@@ -332,7 +368,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 }
 
 .header-quiz .pontos1{
-    background: #ffe927;
+    background: #ff20b8;
     border-radius: 3px;
     padding: 7px;
 }
@@ -346,7 +382,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     width: 100%;
     background: transparent;
     padding: 12px;
-    border: 2px solid #ffe927 ; border-radius: 4px;
+    border: 2px solid #ff20b8 ; border-radius: 4px;
     font-size: 18px;
     margin: 15px 0;
     cursor: pointer;
@@ -357,7 +393,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     box-shadow: none;
     transition: .5s;
     border: none; 
-    color: #e7e42d; filter: drop-shadow(0 0 3px #031618);
+    color: #ff20b8; filter: drop-shadow(0 0 3px #9e096f);
     font-size: 24px;
     animation: pulse 2s infinite;
 
@@ -371,7 +407,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid #ffe927;
+    border-top: 2px solid #ff20b8;
     padding-top: 20px;
     margin-top: 30px;
 }
@@ -383,8 +419,8 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .quiz-ftt .prox{
     width: 100px;
     height: 45px;
-    background: #ffe927;
-    border: 2px solid #ffe927; border-radius: 6px;
+    background: #ff20b8;
+    border: 2px solid #ff20b8; border-radius: 6px;
     outline: none;
     font-size: 20px;
     cursor: pointer;
@@ -401,7 +437,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     animation: pulse 2s infinite;
 }
 
-.opt1 .respostas1.correta{
+.opt1 .respostas1.corretaC{
     width: 100%;
     background: transparent;
     padding: 12px;
@@ -456,9 +492,10 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
   left: 50%;
   transform: translate(-50%, -50%) scale(.8);
   width: 500px;
-  border: 2px solid #e4c200;
+  border: 2px solid #ff20b8;
   border-radius: 6px;
-  background: transparent;
+  background: aliceblue;
+  color: #630232;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -493,12 +530,12 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     position: relative;
     width: 250px;
     height: 250px;
-    background: conic-gradient(#e4c200 3.6deg, rgba(255, 255, 255, .1)0deg);
+    background: conic-gradient(#ff4ec7 3.6deg, rgba(255, 255, 255, .1)0deg);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(0 0 3px #e4c200);
+    filter: drop-shadow(0 0 3px #ff20da);
    
 }
 
@@ -507,7 +544,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     position: absolute;
     width: 210px;
     height: 210px;
-    background-color: #000000;
+    background-color: aliceblue;
     border-radius: 50%;
 }
 
@@ -526,8 +563,8 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
 .botoes-b button {
     width: 150px;
     height: 50px;
-    background: #e4c200;
-    border: 2px solid #e4c200;
+    background: #ff20b8;
+    border: 2px solid #94176d;
     outline: none;
     border-radius: 6px;
     font-size: 20px;

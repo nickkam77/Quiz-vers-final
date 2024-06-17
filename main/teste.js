@@ -4,7 +4,7 @@ const init = document.querySelector('.init');
 const fechar = document.querySelector('.fechar');
 const main = document.querySelector('.main');
 const continuar = document.querySelector('.continuar');
-const quizSec1 = document.querySelector('.quiz-sec1');
+const quizSec1 = document.querySelector('.placar');
 const caixa1 = document.querySelector('.caixa1');
 const caixaResultado = document.querySelector('.caixa-resultado1');
 const retorno = document.querySelector('.tenteNovamente');
@@ -136,6 +136,20 @@ function opcaoSelecionada(resposta) {
         resposta.classList.add('correta');
         pontUsuario+= 10;
         pontuacao1();
+
+        let todasResp1 = optLista1.children.length;
+        for (let i=0; i < todasResp1; i++) {
+            if (optLista1.children[i].textContent == resposta1Correta){
+              optLista1.children[i].setAttribute('class', 'respostas1 correta');
+            }
+
+
+
+        }
+
+        for (let i=0; i < todasResp1; i++) {
+            optLista1.children[i].classList.add('desativado');
+           }
         
     }
     else {
@@ -162,7 +176,7 @@ function opcaoSelecionada(resposta) {
         
     
 
-    // child significa um elemento do html que pertence ou descende diretamente d eum outro elemento ou classe
+    // child significa um elemento do html que pertence ou descende diretamente de um outro elemento ou classe
     // vamos desativar as opções caso o amigo erre a pergunta.
 
    

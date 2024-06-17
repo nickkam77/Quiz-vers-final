@@ -420,6 +420,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     color: #14bd30; filter: drop-shadow(0 0 3px #36e626);
     font-size: 24px;
     animation: pulse 2s infinite;
+    pointer-events: none;
 
 }
 
