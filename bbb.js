@@ -28,7 +28,7 @@ init.onclick = () =>{
 fechar.onclick = () =>{
     infoPop.classList.remove('active');
     main.classList.remove('active');
-    location.href = '/main/teste.html'
+     location.href = './teste.html'
     
 }
 
@@ -45,26 +45,12 @@ continuar.onclick = () => {
 
 }
 
-retorno.onclick = () =>{
-    caixa1.classList.add('active');
-    continuar.classList.remove('active');
-    caixaResultado.classList.remove('active');
-
-    
- contPerg = 0; // Contador para o número de cada pergunta
- pergNum = 1;
- pontUsuario = 0;
- mostrarPerguntas(contPerg);
- contadorPerguntas(pergNum);
-    
-    pontuacao1();
-}
 
 voltar.onclick = () =>{
     quizSec1.classList.remove('active');
     continuar.classList.remove('active');
     caixaResultado.classList.remove('active');
-    location.href = '/main/teste.html'
+    location.href = './teste.html'
 
     
  contPerg = 0; // Contador para o número de cada pergunta
@@ -174,6 +160,7 @@ function opcaoSelecionada(resposta) {
 
          
     }
+
         
     
 
@@ -226,8 +213,30 @@ function mostrarResultado() {
         valorPorcentagem.textContent = `${valorFinalPorcentagem}%`
        
     
-        circuloPorcentagem.style.background = `conic-gradient(#ff20b8 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+        circuloPorcentagem.style.background = `conic-gradient(#ff4ec7 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
 
+        retorno.onclick = () => {
+            caixa1.classList.add('active');
+            continuar.classList.remove('active');
+            caixaResultado.classList.remove('active');
+        
+            
+         contPerg = 0; // Contador para o número de cada pergunta
+         pergNum = 1;
+         pontUsuario = 0;
+         mostrarPerguntas(contPerg);
+         contadorPerguntas(pergNum);
+            
+         pontuacao1();
+         
+            const circuloPorcentagem = document.querySelector('.progresso-circ1');
+            const valorPorcentagem = document.querySelector('.porcentagem1');
+            valorInicialPorcentagem = 0;
+            valorFinalPorcentagem = 0;
+            valorPorcentagem.textContent = `0%`;
+            circuloPorcentagem.style.background = `conic-gradient(#0028aa 0deg, rgba(255, 255, 255, .1) 0deg)`;
+        }
+        
         
 
         if (valorInicialPorcentagem == valorFinalPorcentagem) {

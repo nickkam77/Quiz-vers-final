@@ -28,7 +28,7 @@ init.onclick = () =>{
 fechar.onclick = () =>{
     infoPop.classList.remove('active');
     main.classList.remove('active');
-    location.href = '/main/teste.html'
+   location.href = './teste.html'
     
 }
 
@@ -51,7 +51,7 @@ voltar.onclick = () =>{
     quizSec1.classList.remove('active');
     continuar.classList.remove('active');
     caixaResultado.classList.remove('active');
-    location.href = '/main/teste.html'
+    location.href = './teste.html'
 
     
  contPerg = 0; // Contador para o número de cada pergunta

@@ -28,7 +28,7 @@ init.onclick = () =>{
 fechar.onclick = () =>{
     infoPop.classList.remove('active');
     main.classList.remove('active');
-    location.href = '/main/teste.html'
+      location.href = './teste.html'
     
 }
 
@@ -50,7 +50,7 @@ voltar.onclick = () =>{
     quizSec1.classList.remove('active');
     continuar.classList.remove('active');
     caixaResultado.classList.remove('active');
-    location.href = '/main/teste.html'
+    location.href = './teste.html'
 
     
  contPerg = 0; // Contador para o número de cada pergunta
@@ -213,7 +213,7 @@ function mostrarResultado() {
         valorPorcentagem.textContent = `${valorFinalPorcentagem}%`
        
     
-        circuloPorcentagem.style.background = `conic-gradient(#ff4ec7 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
+        circuloPorcentagem.style.background = `conic-gradient(#e4c200 ${valorInicialPorcentagem * 3.6}deg, rgba(255, 255, 255, .1) 0deg)`;
 
         retorno.onclick = () => {
             caixa1.classList.add('active');
@@ -228,7 +228,6 @@ function mostrarResultado() {
          contadorPerguntas(pergNum);
             
          pontuacao1();
-         
             const circuloPorcentagem = document.querySelector('.progresso-circ1');
             const valorPorcentagem = document.querySelector('.porcentagem1');
             valorInicialPorcentagem = 0;
@@ -237,7 +236,9 @@ function mostrarResultado() {
             circuloPorcentagem.style.background = `conic-gradient(#0028aa 0deg, rgba(255, 255, 255, .1) 0deg)`;
         }
         
+
         
+
 
         if (valorInicialPorcentagem == valorFinalPorcentagem) {
             clearInterval(porcentagem);
