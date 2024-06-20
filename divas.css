@@ -473,6 +473,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
   pointer-events: none;
   opacity: 0;
   transition: 1s ease; transition-delay: 1s;
+  background-color: #94176d;
   
 }
 
@@ -496,6 +497,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     flex-direction: column;
     align-items: center;
     margin: 20px 0 40px;
+    background-color:transparent;
 }
 
 .porcentagem-container .progresso-circ1 {
@@ -516,7 +518,7 @@ o botão de fechar e aqui o 2 sendo o botão de continuar*/
     position: absolute;
     width: 210px;
     height: 210px;
-    background-color: #000000;
+    background-color: transparent;
     border-radius: 50%;
 }
 
